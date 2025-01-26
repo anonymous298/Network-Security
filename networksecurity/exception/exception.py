@@ -9,7 +9,7 @@ class NetworkSecurityException(Exception):
 
         self.linno = exc_tb.tb_lineno
         self.file_name = exc_tb.tb_frame.f_code.co_filename
-
+    
     def __str__(self):
         return f'Error occured in python sript [{self.file_name}] lineno [{self.linno}] error message [{str(self.error_message)}]'
 
